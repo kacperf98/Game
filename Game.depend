@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1555348692 source:d:\codeblocks\projects\game\main.cpp
+	<iostream>
+	"Character.h"
+
+1555348738 d:\codeblocks\projects\game\include\character.h
+
+1555348765 source:d:\codeblocks\projects\game\src\character.cpp
+	"Character.h"
+
