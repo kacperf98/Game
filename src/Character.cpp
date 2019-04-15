@@ -1,9 +1,17 @@
 #include "Character.h"
 
 Character::Character() {
+    name = "No name";
     healthPoints = 100;
     manaPoints = 100;
     damagePoints = 0;
+}
+
+Character::Character(std::string new_name, int hp, int mp, int att) {
+    name = new_name;
+    healthPoints = hp;
+    manaPoints = mp;
+    damagePoints = att;
 }
 
 void Character::setAttackDmg(int att) {
