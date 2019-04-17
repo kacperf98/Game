@@ -4,7 +4,7 @@
 
 void mainMenu() {
     int test {};
-    while (champion1.isAlive() test < 1) {
+    while (test < 5) {
         std::cout << "---------------------\n"
             << "1. A\n"
             << "2. B\n"
@@ -18,7 +18,7 @@ void mainMenu() {
         switch(select) {
             case '1': std::cout << "A\n"; break;
             case '2': std::cout << "B\n"; break;
-            case '0': return 0; break;
+            case '0': std::cout << "Bye!\n"; break;
         }
             ++test;
     }
