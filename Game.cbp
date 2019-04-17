@@ -30,9 +30,14 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Character.h" />
+		<Unit filename="include/Menu.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Character.cpp" />
+		<Unit filename="src/Menu.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
