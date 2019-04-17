@@ -2,5 +2,9 @@
 #define _MENU_H_
 
 void mainMenu();
+void newGame();
+void continueGame();
+void optionMenu();
+bool exitGame();
 
 #endif // MENU_H_
