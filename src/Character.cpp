@@ -14,6 +14,10 @@ Character::Character(std::string new_name, int hp, int mp, int att) {
     damagePoints = att;
 }
 
+Character::~Character() {
+
+}
+
 void Character::setAttackDmg(int att) {
     damagePoints = att;
 }
