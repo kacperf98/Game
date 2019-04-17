@@ -1,5 +1,5 @@
-#ifndef CHARACTER_H_
-#define CHARACTER_H_
+#ifndef _CHARACTER_H_
+#define _CHARACTER_H_
 
 #include <string>
 
@@ -7,6 +7,7 @@ class Character {
     public:
         Character();
         Character(std::string name, int hp, int mp, int att);
+        ~Character();
         int getAttack();
         int getHealth();
         int getMana();
@@ -22,4 +23,4 @@ class Character {
         std::string name;
 };
 
-#endif // CHARACTER_H_
+#endif // _CHARACTER_H_
