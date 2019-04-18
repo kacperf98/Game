@@ -4,7 +4,7 @@
 =============
 -Add levels
 -Add enemies
--Increase amount of enemies when level increase
+-Increase amount of enemies when level increases
 -Add basic skills to champion1
 -More in future...
 */
