@@ -1,3 +1,9 @@
+/*
+=============
+=   TO DO   =
+=============
+-Change everything to class 'Game' that has these methods declared below
+ */
 #include "Menu.h"
 #include "character.h"
 #include <iostream>
@@ -20,20 +26,30 @@ void mainMenu() {
         std::cin >> select;
 
         switch(select) {
-            case '1': /*system("CLS");*/ std::cout << "A\n"; break;
-            case '2': std::cout << "A\n"; break;
-            case '3': std::cout << "A\n"; break;
-            case '4': std::cout << "A\n"; break;
-            case '0': exit_game = exitGame(); break;
+            case '1': system("CLS"); newGame(); break;
+            case '2': system("CLS"); continueGame(); break;
+            case '3': system("CLS"); selectLevel(); break;
+            case '4': system("CLS"); optionMenu(); break;
+            case '0': system("CLS"); exit_game = exitGame(); break;
         }
     }
 }
 
-void newGame() {}
+void newGame() {
+    std::cout << "Nothing is here yet.\n";
+}
 
-void continueGame() {}
+void continueGame() {
+    std::cout << "Nothing is here yet.\n";
+}
 
-void optionMenu() {}
+void selectLevel() {
+    std::cout << "Nothing is here yet.\n";
+}
+
+void optionMenu() {
+    std::cout << "Nothing is here yet.\n";
+}
 
 bool exitGame() {
     return true;

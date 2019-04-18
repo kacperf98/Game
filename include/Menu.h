@@ -4,6 +4,7 @@
 void mainMenu();
 void newGame();
 void continueGame();
+void selectLevel();
 void optionMenu();
 bool exitGame();
 
