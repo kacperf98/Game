@@ -20,6 +20,6 @@ int main()
 {
     Character champion1;
     //vector<Character> enemy; creating enemies with for
-
-    mainMenu();
+    Menu menu;
+    menu.mainMenu();
 }

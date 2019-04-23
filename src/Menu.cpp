@@ -2,14 +2,14 @@
 =============
 =   TO DO   =
 =============
--Change everything to class 'Game' that has these methods declared below
+-Change everything to class 'Menu' that has these methods declared below
  */
 #include "Menu.h"
 #include "character.h"
 #include <iostream>
 #include <cstdlib>
 
-void mainMenu() {
+void Menu::mainMenu() {
     bool exit_game = !exitGame();
 
     while (!exit_game) {
@@ -31,26 +31,27 @@ void mainMenu() {
             case '3': system("CLS"); selectLevel(); break;
             case '4': system("CLS"); optionMenu(); break;
             case '0': system("CLS"); exit_game = exitGame(); break;
+            default: system("CLS"); std::cout << "There is no choice like that.\n";
         }
     }
 }
 
-void newGame() {
+void Menu::newGame() {
     std::cout << "Nothing is here yet.\n";
 }
 
-void continueGame() {
+void Menu::continueGame() {
     std::cout << "Nothing is here yet.\n";
 }
 
-void selectLevel() {
+void Menu::selectLevel() {
     std::cout << "Nothing is here yet.\n";
 }
 
-void optionMenu() {
+void Menu::optionMenu() {
     std::cout << "Nothing is here yet.\n";
 }
 
-bool exitGame() {
+bool Menu::exitGame() {
     return true;
 }
