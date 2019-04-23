@@ -1,5 +1,7 @@
 #include "Menu.h"
+#include "Character.h"
 #include <iostream>
+#include <string>
 
 Menu::Menu() {
     exit_game = false;
@@ -36,6 +38,14 @@ void Menu::mainMenu() {
 void Menu::newGame() {
     main_menu_open = closeMainMenu();
 
+    std::cout << "Enter name for your champion: ";
+    std::string name {};
+    std::cin >> name;
+
+    Character champion(name);
+    champion.showName();
+
+    // Comment code below later
     while (!exit_game && !main_menu_open) {
         std::cout << "---------------------\n"
             << "Nothing is here yet.\n"

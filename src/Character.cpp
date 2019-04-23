@@ -1,10 +1,15 @@
 #include "Character.h"
+#include <iostream>
 
 Character::Character() {
     name = "No name";
     healthPoints = 100;
     manaPoints = 100;
     damagePoints = 0;
+}
+
+Character::Character(std::string new_name) {
+    name = new_name;
 }
 
 Character::Character(std::string new_name, int hp, int mp, int att) {
@@ -16,6 +21,10 @@ Character::Character(std::string new_name, int hp, int mp, int att) {
 
 Character::~Character() {
 
+}
+
+void Character::showName() {
+    std::cout << name << std::endl;
 }
 
 void Character::setAttackDamage(int att) {

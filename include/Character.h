@@ -6,8 +6,10 @@
 class Character {
 public:
     Character();
+    Character(std::string name);
     Character(std::string name, int hp, int mp, int att);
     ~Character();
+    void showName();
     int getAttack();
     int getHealth();
     int getMana();

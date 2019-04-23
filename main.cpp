@@ -7,18 +7,13 @@
 -Add enemies
 -Increase amount of enemies when level increases
 -Add basic skills to champion1
--Add class 'Game' that has level, login and password attributes that are save to .txt file
+-Add class 'Game' that has level, login and password attributes that are save to DB
 -More in future...
 */
 #include "Menu.h"
-#include "Character.h"
-#include <vector>
 
 int main()
 {
     Menu menu;
     menu.mainMenu();
-
-    Character champion1;
-    //vector<Character> enemy; creating enemies with for
 }
