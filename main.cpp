@@ -11,7 +11,6 @@
 */
 #include "Menu.h"
 #include "Character.h"
-#include <iostream>
 #include <vector>
 
 using namespace std;

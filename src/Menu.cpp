@@ -1,7 +1,5 @@
 #include "Menu.h"
-#include "character.h"
 #include <iostream>
-#include <cstdlib>
 
 Menu::Menu() {
     exit_game = false;

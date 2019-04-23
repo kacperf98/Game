@@ -13,9 +13,7 @@
 
 1556021667 d:\codeblocks\projects\game\include\menu.h
 
-1556018573 source:d:\codeblocks\projects\game\src\menu.cpp
+1556022534 source:d:\codeblocks\projects\game\src\menu.cpp
 	"Menu.h"
-	"character.h"
 	<iostream>
-	<cstdlib>
 
