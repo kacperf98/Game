@@ -55,19 +55,72 @@ void Menu::newGame() {
             default: system("CLS"); std::cout << "There is no choice like that.\n";
         }
     }
-    //std::cout << "Nothing is here yet.\n";
 }
 
 void Menu::continueGame() {
-    std::cout << "Nothing is here yet.\n";
+    main_menu_open = closeMainMenu();
+
+    while (!exit_game && !main_menu_open) {
+        std::cout << "---------------------\n"
+            << "Nothing is here yet.\n"
+            << "9. Previous\n"
+            << "0. Exit\n"
+            << "---------------------\n";
+
+        std::cout << "Select: ";
+        char select {};
+        std::cin >> select;
+
+        switch(select) {
+            case '9': system("CLS"); mainMenu(); break;
+            case '0': system("CLS"); exit_game = exitGame(); break;
+            default: system("CLS"); std::cout << "There is no choice like that.\n";
+        }
+    }
 }
 
 void Menu::selectLevel() {
-    std::cout << "Nothing is here yet.\n";
+    main_menu_open = closeMainMenu();
+
+    while (!exit_game && !main_menu_open) {
+        std::cout << "---------------------\n"
+            << "Nothing is here yet.\n"
+            << "9. Previous\n"
+            << "0. Exit\n"
+            << "---------------------\n";
+
+        std::cout << "Select: ";
+        char select {};
+        std::cin >> select;
+
+        switch(select) {
+            case '9': system("CLS"); mainMenu(); break;
+            case '0': system("CLS"); exit_game = exitGame(); break;
+            default: system("CLS"); std::cout << "There is no choice like that.\n";
+        }
+    }
 }
 
 void Menu::optionMenu() {
-    std::cout << "Nothing is here yet.\n";
+    main_menu_open = closeMainMenu();
+
+    while (!exit_game && !main_menu_open) {
+        std::cout << "---------------------\n"
+            << "Nothing is here yet.\n"
+            << "9. Previous\n"
+            << "0. Exit\n"
+            << "---------------------\n";
+
+        std::cout << "Select: ";
+        char select {};
+        std::cin >> select;
+
+        switch(select) {
+            case '9': system("CLS"); mainMenu(); break;
+            case '0': system("CLS"); exit_game = exitGame(); break;
+            default: system("CLS"); std::cout << "There is no choice like that.\n";
+        }
+    }
 }
 
 bool Menu::closeMainMenu() {
