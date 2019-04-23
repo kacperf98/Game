@@ -1,18 +1,17 @@
-/*
-=============
-=   TO DO   =
-=============
--Change everything to class 'Menu' that has these methods declared below
- */
 #include "Menu.h"
 #include "character.h"
 #include <iostream>
 #include <cstdlib>
 
-void Menu::mainMenu() {
-    bool exit_game = !exitGame();
+Menu::Menu() {
+    exit_game = false;
+    main_menu_open = true;
+}
 
-    while (!exit_game) {
+void Menu::mainMenu() {
+    main_menu_open = !closeMainMenu();
+
+    while (!exit_game && main_menu_open) {
         std::cout << "---------------------\n"
             << "1. New game\n"
             << "2. Continue\n"
@@ -37,7 +36,26 @@ void Menu::mainMenu() {
 }
 
 void Menu::newGame() {
-    std::cout << "Nothing is here yet.\n";
+    main_menu_open = closeMainMenu();
+
+    while (!exit_game && !main_menu_open) {
+        std::cout << "---------------------\n"
+            << "Nothing is here yet.\n"
+            << "9. Previous\n"
+            << "0. Exit\n"
+            << "---------------------\n";
+
+        std::cout << "Select: ";
+        char select {};
+        std::cin >> select;
+
+        switch(select) {
+            case '9': system("CLS"); mainMenu(); break;
+            case '0': system("CLS"); exit_game = exitGame(); break;
+            default: system("CLS"); std::cout << "There is no choice like that.\n";
+        }
+    }
+    //std::cout << "Nothing is here yet.\n";
 }
 
 void Menu::continueGame() {
@@ -50,6 +68,10 @@ void Menu::selectLevel() {
 
 void Menu::optionMenu() {
     std::cout << "Nothing is here yet.\n";
+}
+
+bool Menu::closeMainMenu() {
+    return false;
 }
 
 bool Menu::exitGame() {
