@@ -1,14 +1,13 @@
 # depslib dependency file v1.0
-1556021232 source:d:\codeblocks\projects\game\main.cpp
+1556022554 source:d:\codeblocks\projects\game\main.cpp
 	"Menu.h"
 	"Character.h"
-	<iostream>
 	<vector>
 
-1556018435 d:\codeblocks\projects\game\include\character.h
+1556022840 d:\codeblocks\projects\game\include\character.h
 	<string>
 
-1555504347 source:d:\codeblocks\projects\game\src\character.cpp
+1556022851 source:d:\codeblocks\projects\game\src\character.cpp
 	"Character.h"
 
 1556021667 d:\codeblocks\projects\game\include\menu.h

@@ -11,7 +11,7 @@ public:
     int getAttack();
     int getHealth();
     int getMana();
-    void setAttackDmg(int att);
+    void setAttackDamage(int att);
     void setHealthPoints(int hp);
     void setManaPoints(int mp);
     bool isAlive();

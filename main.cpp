@@ -2,6 +2,7 @@
 =============
 =   TO DO   =
 =============
+-Upgrade menu
 -Add levels
 -Add enemies
 -Increase amount of enemies when level increases
@@ -12,8 +13,6 @@
 #include "Menu.h"
 #include "Character.h"
 #include <vector>
-
-using namespace std;
 
 int main()
 {

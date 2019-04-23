@@ -18,7 +18,7 @@ Character::~Character() {
 
 }
 
-void Character::setAttackDmg(int att) {
+void Character::setAttackDamage(int att) {
     damagePoints = att;
 }
 
