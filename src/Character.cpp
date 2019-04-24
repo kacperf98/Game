@@ -3,15 +3,20 @@
 
 Character::Character() {
     name = "No name";
-    healthPoints = 100;
-    manaPoints = 100;
+    healthPoints = 0;
+    manaPoints = 0;
     damagePoints = 0;
 }
 
+// After creating DB delete this constructor
 Character::Character(std::string new_name) {
     name = new_name;
+    healthPoints = 100;
+    manaPoints = 100;
+    damagePoints = 10;
 }
 
+// Use only constructor below after creating DB to set all parameters
 Character::Character(std::string new_name, int hp, int mp, int att) {
     name = new_name;
     healthPoints = hp;
