@@ -5,17 +5,25 @@
 
 class Character {
 public:
+    //Constructors and Destructor
     Character();
-    Character(std::string name);
-    Character(std::string name, int hp, int mp, int att);
+    Character(std::string new_name);
+    Character(std::string new_name, int hp, int mp, int att);
     ~Character();
-    void showName();
+
+    //Getters
+    std::string getName();
     int getAttack();
     int getHealth();
     int getMana();
+
+    //Setters
+    void setName(std::string new_name);
     void setAttackDamage(int att);
     void setHealthPoints(int hp);
     void setManaPoints(int mp);
+
+    //Other
     bool isAlive();
 
 private:

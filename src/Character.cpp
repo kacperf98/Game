@@ -28,8 +28,8 @@ Character::~Character() {
 
 }
 
-void Character::showName() {
-    std::cout << name << std::endl;
+void Character::setName(std::string new_name) {
+    name = new_name;
 }
 
 void Character::setAttackDamage(int att) {
@@ -42,6 +42,10 @@ void Character::setHealthPoints(int hp) {
 
 void Character::setManaPoints(int mp) {
     manaPoints = mp;
+}
+
+std::string Character::getName() {
+    return name;
 }
 
 int Character::getAttack() {

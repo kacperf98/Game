@@ -42,8 +42,9 @@ void Menu::newGame() {
     std::string name {};
     std::cin >> name;
 
-    Character champion(name);
-    champion.showName();
+    Character champion;
+    champion.setName(name);
+    std::cout << champion.getName() << std::endl;
     std::cout << champion.getAttack() << std::endl;
 
     // Comment code below later
