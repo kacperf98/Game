@@ -5,16 +5,16 @@ class Menu {
 public:
     Menu();
     void mainMenu();
-    bool closeMainMenu();
     void newGame();
     void continueGame();
     void selectLevel();
     void optionMenu();
+    bool closeMainMenu();
     bool exitGame();
 
 private:
-    bool exit_game;
     bool main_menu_open;
+    bool exit_game;
 };
 
 #endif // MENU_H_

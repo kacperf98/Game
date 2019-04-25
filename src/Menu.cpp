@@ -4,10 +4,11 @@
 #include <string>
 
 // Change 'switch' to 'if' later
+// Change setters for 'champion' when DB is created
 
 Menu::Menu() {
-    exit_game = false;
     main_menu_open = true;
+    exit_game = false;
 }
 
 void Menu::mainMenu() {
@@ -44,10 +45,8 @@ void Menu::newGame() {
 
     Character champion;
     champion.setName(name);
-    std::cout << champion.getName() << std::endl;
-    std::cout << champion.getAttack() << std::endl;
 
-    // Comment code below later
+    // Delete all code in 'while' included 'while' later
     while (!exit_game && !main_menu_open) {
         std::cout << "---------------------\n"
             << "Nothing is here yet.\n"

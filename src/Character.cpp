@@ -1,6 +1,7 @@
 #include "Character.h"
 #include <iostream>
 
+// Use this constructor after creating DB to set all parameters if account doesn't exist
 Character::Character() {
     name = "No name";
     healthPoints = 0;
@@ -16,16 +17,12 @@ Character::Character(std::string new_name) {
     damagePoints = 10;
 }
 
-// Use only constructor below after creating DB to set all parameters
+// Use this constructor after creating DB to set all parameters if account exists
 Character::Character(std::string new_name, int hp, int mp, int att) {
     name = new_name;
     healthPoints = hp;
     manaPoints = mp;
     damagePoints = att;
-}
-
-Character::~Character() {
-
 }
 
 void Character::setName(std::string new_name) {
