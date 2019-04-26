@@ -1,19 +1,42 @@
 # depslib dependency file v1.0
-1556032417 source:d:\codeblocks\projects\game\main.cpp
+1556309088 source:d:\codeblocks\projects\game\main.cpp
 	"Menu.h"
 
-1556223685 d:\codeblocks\projects\game\include\character.h
+1556308669 d:\codeblocks\projects\game\include\character.h
 	<string>
 
-1556134926 source:d:\codeblocks\projects\game\src\character.cpp
+1556308746 source:d:\codeblocks\projects\game\src\character.cpp
 	"Character.h"
 	<iostream>
 
-1556021667 d:\codeblocks\projects\game\include\menu.h
+1556311615 d:\codeblocks\projects\game\include\menu.h
 
-1556134940 source:d:\codeblocks\projects\game\src\menu.cpp
+1556312685 source:d:\codeblocks\projects\game\src\menu.cpp
+	"Menu.h"
+	"Character.h"
+	"Register.h"
+	"Game.h"
+	<iostream>
+	<string>
+
+1556313133 source:d:\codeblocks\projects\game\src\game.cpp
+	"Game.h"
 	"Menu.h"
 	"Character.h"
 	<iostream>
 	<string>
+	<windows.h>
+
+1556312289 d:\codeblocks\projects\game\include\game.h
+	<string>
+
+1556310008 d:\codeblocks\projects\game\include\register.h
+	<string>
+
+1556312699 source:d:\codeblocks\projects\game\src\register.cpp
+	"Register.h"
+	"Menu.h"
+	"Character.h"
+	<iostream>
+	<windows.h>
 

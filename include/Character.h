@@ -19,9 +19,9 @@ public:
     bool isAlive();
 
 private:
-    int healthPoints;
-    int manaPoints;
-    int damagePoints;
+    int health_points;
+    int mana_points;
+    int damage_points;
     std::string name;
 };
 

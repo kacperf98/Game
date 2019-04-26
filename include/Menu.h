@@ -7,8 +7,6 @@ public:
     void mainMenu();
     void newGame();
     void continueGame();
-    void selectLevel();
-    void optionMenu();
     bool closeMainMenu();
     bool exitGame();
 
@@ -17,4 +15,4 @@ private:
     bool exit_game;
 };
 
-#endif // MENU_H_
+#endif // _MENU_H_

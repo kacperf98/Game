@@ -35,10 +35,14 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Character.h" />
+		<Unit filename="include/Game.h" />
 		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Register.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Character.cpp" />
+		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Register.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

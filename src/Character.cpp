@@ -4,25 +4,25 @@
 // Use this constructor after creating DB to set all parameters if account doesn't exist
 Character::Character() {
     name = "No name";
-    healthPoints = 0;
-    manaPoints = 0;
-    damagePoints = 0;
+    health_points = 0;
+    mana_points = 0;
+    damage_points = 0;
 }
 
 // After creating DB delete this constructor
 Character::Character(std::string new_name) {
     name = new_name;
-    healthPoints = 100;
-    manaPoints = 100;
-    damagePoints = 10;
+    health_points = 100;
+    mana_points = 100;
+    damage_points = 10;
 }
 
 // Use this constructor after creating DB to set all parameters if account exists
 Character::Character(std::string new_name, int hp, int mp, int att) {
     name = new_name;
-    healthPoints = hp;
-    manaPoints = mp;
-    damagePoints = att;
+    health_points = hp;
+    mana_points = mp;
+    damage_points = att;
 }
 
 void Character::setName(std::string new_name) {
@@ -30,15 +30,15 @@ void Character::setName(std::string new_name) {
 }
 
 void Character::setAttackDamage(int att) {
-    damagePoints = att;
+    damage_points = att;
 }
 
 void Character::setHealthPoints(int hp) {
-    healthPoints = hp;
+    health_points = hp;
 }
 
 void Character::setManaPoints(int mp) {
-    manaPoints = mp;
+    mana_points = mp;
 }
 
 std::string Character::getName() {
@@ -46,19 +46,19 @@ std::string Character::getName() {
 }
 
 int Character::getAttack() {
-    return damagePoints;
+    return damage_points;
 }
 
 int Character::getHealth() {
-    return healthPoints;
+    return health_points;
 }
 
 int Character::getMana() {
-    return manaPoints;
+    return mana_points;
 }
 
 bool Character::isAlive() {
-    if(healthPoints > 0)
+    if(health_points > 0)
         return true;
     else
         return false;
