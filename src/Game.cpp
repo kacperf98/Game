@@ -2,7 +2,6 @@
 #include "Menu.h"
 #include "Character.h"
 #include <iostream>
-#include <string>
 #include <windows.h>
 
 //Test
@@ -23,13 +22,14 @@ void Game::startGame() {
     std::cin >> check_password;
 
     if(check_login == login && check_password == password) {
-        std::cout << "Your in! Wait 2 seconds!";
+        std::cout << "Login succeed! Wait 2 seconds!";
         Sleep(2000);
         system("CLS");
     }
     else {
-        std::cout << "Wrong login or password! Wait 2 seconds!";
+        std::cout << "Wrong login or password! Try again!";
         Sleep(2000);
         system("CLS");
+        startGame();
     }
 }

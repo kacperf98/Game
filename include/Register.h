@@ -2,7 +2,6 @@
 #define _REGISTER_H_
 
 #include <string>
-
 // Add register form when DB is created
 
 class Register

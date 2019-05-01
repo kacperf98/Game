@@ -8,6 +8,7 @@ class Game
 public:
     Game();
     void startGame();
+    bool login_succeed();
 
 private:
     int level;

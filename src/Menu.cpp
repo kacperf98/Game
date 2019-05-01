@@ -17,7 +17,7 @@ void Menu::mainMenu() {
 
     while (!exit_game && main_menu_open) {
         std::cout << "---------------------\n"
-            << "1. New game\n"
+           // << "1. New game\n"
             << "2. Continue\n"
             << "0. Exit\n"
             << "---------------------\n";
@@ -26,11 +26,11 @@ void Menu::mainMenu() {
         int select {};
         std::cin >> select;
 
-        if(select == 1) {
+        /*if(select == 1) {
             system("CLS");
             newGame();
         }
-        else if(select == 2) {
+        else */if(select == 2) {
             system("CLS");
             continueGame();
         }
@@ -44,13 +44,13 @@ void Menu::mainMenu() {
         }
     }
 }
-
+/*
 void Menu::newGame() {
     main_menu_open = closeMainMenu();
 
     while (!exit_game && !main_menu_open) {
         std::cout << "---------------------\n"
-                << "1. Register\n"
+                //<< "1. Register\n"
                 << "9. Back\n"
                 << "---------------------\n";
 
@@ -72,7 +72,7 @@ void Menu::newGame() {
         }
     }
 }
-
+*/
 void Menu::continueGame() {
     main_menu_open = closeMainMenu();
     system("CLS");

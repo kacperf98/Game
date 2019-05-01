@@ -5,7 +5,7 @@ class Menu {
 public:
     Menu();
     void mainMenu();
-    void newGame();
+    //void newGame();
     void continueGame();
     bool closeMainMenu();
     bool exitGame();
