@@ -10,7 +10,7 @@ Game::Game() {
     password = "test";
 }
 
-void Game::startGame() {
+void Game::checkLogin() {
     system("CLS");
 
     std::cout << "Enter your login: ";
@@ -25,11 +25,16 @@ void Game::startGame() {
         std::cout << "Login succeed! Wait 2 seconds!";
         Sleep(2000);
         system("CLS");
+        startGame();
     }
     else {
         std::cout << "Wrong login or password! Try again!";
         Sleep(2000);
         system("CLS");
-        startGame();
+        checkLogin();
     }
+}
+
+void Game::startGame() {
+
 }

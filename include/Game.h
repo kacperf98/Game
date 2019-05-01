@@ -7,8 +7,8 @@ class Game
 {
 public:
     Game();
+    void checkLogin();
     void startGame();
-    bool login_succeed();
 
 private:
     int level;
