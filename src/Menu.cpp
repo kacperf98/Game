@@ -17,8 +17,8 @@ void Menu::mainMenu() {
 
     while (!exit_game && main_menu_open) {
         std::cout << "---------------------\n"
-           // << "1. New game\n"
-            << "2. Continue\n"
+            << "1. New game (NOT READY YET)\n"
+            << "2. Start\n"
             << "0. Exit\n"
             << "---------------------\n";
 
@@ -90,7 +90,8 @@ void Menu::continueGame() {
         if(select == 1) {
             system("CLS");
             Game game;
-            game.startGame();
+            game.checkLogin();
+            mainMenu();
         }
         else if(select == 9) {
             system("CLS");

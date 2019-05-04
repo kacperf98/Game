@@ -5,13 +5,13 @@
 1556308669 d:\codeblocks\projects\game\include\character.h
 	<string>
 
-1556308746 source:d:\codeblocks\projects\game\src\character.cpp
+1556989849 source:d:\codeblocks\projects\game\src\character.cpp
 	"Character.h"
 	<iostream>
 
 1556707612 d:\codeblocks\projects\game\include\menu.h
 
-1556707658 source:d:\codeblocks\projects\game\src\menu.cpp
+1556990041 source:d:\codeblocks\projects\game\src\menu.cpp
 	"Menu.h"
 	"Character.h"
 	"Register.h"
@@ -19,15 +19,14 @@
 	<iostream>
 	<string>
 
-1556707786 source:d:\codeblocks\projects\game\src\game.cpp
+1556991204 source:d:\codeblocks\projects\game\src\game.cpp
 	"Game.h"
 	"Menu.h"
-	"Character.h"
 	<iostream>
-	<string>
 	<windows.h>
 
-1556737920 d:\codeblocks\projects\game\include\game.h
+1556987157 d:\codeblocks\projects\game\include\game.h
+	"Character.h"
 	<string>
 
 1556708017 d:\codeblocks\projects\game\include\register.h

@@ -3,18 +3,18 @@
 
 // Use this constructor after creating DB to set all parameters if account doesn't exist
 Character::Character() {
-    name = "No name";
-    health_points = 0;
-    mana_points = 0;
-    damage_points = 0;
+    name = "Test";
+    health_points = 200;
+    mana_points = 100;
+    damage_points = 30;
 }
 
-// After creating DB delete this constructor
+//Parameters for first level Character
 Character::Character(std::string new_name) {
     name = new_name;
-    health_points = 100;
+    health_points = 200;
     mana_points = 100;
-    damage_points = 10;
+    damage_points = 20;
 }
 
 // Use this constructor after creating DB to set all parameters if account exists
