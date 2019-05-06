@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-// Change setters for 'champion' when DB is created
+// Change setters for 'champion' when DB is created to set stats from DB
 
 Menu::Menu() {
     main_menu_open = true;
@@ -18,7 +18,7 @@ void Menu::mainMenu() {
     while (!exit_game && main_menu_open) {
         std::cout << "---------------------\n"
             << "1. New game (NOT READY YET)\n"
-            << "2. Start\n"
+            << "2. Start\n" //Change to 'Continue' when DB is created
             << "0. Exit\n"
             << "---------------------\n";
 

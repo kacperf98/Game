@@ -3,11 +3,16 @@
 #include <iostream>
 #include <windows.h>
 
-//Test
+//Constructor for test
 Game::Game() {
     login = "test";
     password = "test";
     level = 1;
+}
+
+//This constructor probably will be used when DB is created
+Game::Game(std::string player_login, std::string player_password, int player_level) {
+
 }
 
 void Game::checkLogin() {

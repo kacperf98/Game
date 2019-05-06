@@ -8,6 +8,7 @@ class Game
 {
 public:
     Game();
+    Game(std::string player_login, std::string player_password, int player_level);
     void checkLogin();
     void startGame(Character& player, Character& enemy);
     void showInfo(Character& player, Character& enemy);
