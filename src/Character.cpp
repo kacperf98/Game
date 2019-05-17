@@ -1,15 +1,5 @@
 #include "Character.h"
 
-// Use this constructor after creating DB to set all parameters if account doesn't exist
-Character::Character()
-    : Character {"Test", 200, 100, 30} {
-}
-
-//Parameters for first level Character
-Character::Character(std::string new_name)
-    : Character {new_name, 200, 100, 20} {
-}
-
 // Use this constructor after creating DB to set all parameters if account exists
 Character::Character(std::string new_name, int hp, int mp, int att)
     : name{new_name}, health_points{hp}, mana_points{mp}, damage_points{att} {

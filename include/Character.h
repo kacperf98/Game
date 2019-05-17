@@ -6,9 +6,7 @@
 
 class Character {
 public:
-    Character();
-    Character(std::string new_name);
-    Character(std::string new_name, int hp, int mp, int att);
+    Character(std::string new_name = "None", int hp = 50, int mp = 0, int att = 5);
     std::string getName();
     int getAttack();
     int getHealth();
