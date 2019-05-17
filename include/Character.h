@@ -1,6 +1,7 @@
 #ifndef _CHARACTER_H_
 #define _CHARACTER_H_
 
+#include <iostream>
 #include <string>
 
 class Character {
@@ -19,10 +20,11 @@ public:
     bool isAlive();
 
 private:
+    std::string name;
     int health_points;
     int mana_points;
     int damage_points;
-    std::string name;
+    //Add levels for Character
 };
 
 #endif // _CHARACTER_H_

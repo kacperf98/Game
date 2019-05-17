@@ -1,7 +1,10 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
+#include "Menu.h"
 #include "Character.h"
+#include <iostream>
+#include <windows.h>
 #include <string>
 
 class Game
@@ -16,9 +19,9 @@ public:
     void endGame(Character& player, Character& enemy);
 
 private:
-    int level;
     std::string login;
     std::string password;
+    int level; //After creating DB change 'level' to 'wave'
 };
 
 #endif // _GAME_H_

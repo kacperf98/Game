@@ -1,14 +1,6 @@
 #include "Register.h"
-#include "Menu.h"
-#include "Character.h"
-#include <iostream>
-#include <windows.h>
 
 Register::Register() {
-
-}
-
-Register::~Register() {
 
 }
 

@@ -1,19 +1,14 @@
 #include "Game.h"
-#include "Menu.h"
-#include <iostream>
-#include <windows.h>
 
 //Constructor for test
-Game::Game() {
-    login = "test";
-    password = "test";
-    level = 1;
+Game::Game()
+    : login{"test"}, password{"test"}, level{1} {
 }
 
 //This constructor probably will be used when DB is created
-Game::Game(std::string player_login, std::string player_password, int player_level) {
+/*Game::Game(std::string player_login, std::string player_password, int player_level) {
 
-}
+} */
 
 void Game::checkLogin() {
     system("CLS");
@@ -30,8 +25,8 @@ void Game::checkLogin() {
         std::cout << "Login succeed! Wait 2 seconds!";
         Sleep(2000);
         system("CLS");
-        Character champion("Champion");
-        Character enemy("Enemy", 100, 0, 10);
+        Character champion {"Champion"};
+        Character enemy {"Enemy", 100, 0, 10};
 
         startGame(champion, enemy);
     }

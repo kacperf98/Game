@@ -1,6 +1,12 @@
 #ifndef _MENU_H_
 #define _MENU_H_
 
+#include "Character.h"
+#include "Register.h"
+#include "Game.h"
+#include <iostream>
+#include <string>
+
 class Menu {
 public:
     Menu();

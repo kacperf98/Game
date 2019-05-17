@@ -1,15 +1,9 @@
 #include "Menu.h"
-#include "Character.h"
-#include "Register.h"
-#include "Game.h"
-#include <iostream>
-#include <string>
 
 // Change setters for 'champion' when DB is created to set stats from DB
 
-Menu::Menu() {
-    main_menu_open = true;
-    exit_game = false;
+Menu::Menu()
+   : main_menu_open{true}, exit_game{false} {
 }
 
 void Menu::mainMenu() {
