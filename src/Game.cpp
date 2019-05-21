@@ -68,7 +68,7 @@ void Game::showInfo(Character& player, Character& enemy) {
 void Game::fight(Character& player, Character& enemy) {
     std::cout << "---------------------\n"
             << "1. Attack\n"
-            << "2. Skill #1 (not prepared yet!)\n"
+            << "2. Skill #1\n"
             << "3. Skill #2 (not prepared yet!)\n"
             << "---------------------\n";
 
@@ -80,10 +80,11 @@ void Game::fight(Character& player, Character& enemy) {
             enemy.setHealthPoints(enemy.getHealth() - player.getAttack());
             player.setHealthPoints(player.getHealth() - enemy.getAttack());
         }
-        /*else if(select == 2) {
-
+        else if(select == 2) {
+            enemy.setHealthPoints(enemy.getHealth() - (player.getAttack() * 2));
+            player.setHealthPoints(player.getHealth() - enemy.getAttack());
         }
-        else if(select == 3) {
+        /*else if(select == 3) {
 
         }*/
         else {
