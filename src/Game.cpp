@@ -25,7 +25,7 @@ void Game::checkLogin() {
         std::cout << "Login succeed! Wait 2 seconds!";
         Sleep(2000);
         system("CLS");
-        Character champion {"Champion"};
+        Character champion {"Champion", 100, 40, 10};
         Character enemy {"Enemy", 100, 0, 10};
 
         startGame(champion, enemy);
@@ -81,8 +81,13 @@ void Game::fight(Character& player, Character& enemy) {
             player.setHealthPoints(player.getHealth() - enemy.getAttack());
         }
         else if(select == 2) {
-            enemy.setHealthPoints(enemy.getHealth() - (player.getAttack() * 2));
-            player.setHealthPoints(player.getHealth() - enemy.getAttack());
+            if(player.getMana() >= 20) {
+                enemy.setHealthPoints(enemy.getHealth() - (player.getAttack() * 2));
+                player.setManaPoints(player.getMana() - 20);
+                player.setHealthPoints(player.getHealth() - enemy.getAttack());
+            }
+            else
+                std::cout << "Not enough mana!";
         }
         /*else if(select == 3) {
 
