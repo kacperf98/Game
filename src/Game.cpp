@@ -68,8 +68,8 @@ void Game::showInfo(Character& player, Character& enemy) {
 void Game::fight(Character& player, Character& enemy) {
     std::cout << "---------------------\n"
             << "1. Attack\n"
-            << "2. Skill #1\n"
-            << "3. Skill #2 (not prepared yet!)\n"
+            << "2. Skill #1 (-20 mana)\n"
+            << "3. Skill #2 (-30 mana)\n"
             << "---------------------\n";
 
         std::cout << "Select: ";
@@ -89,9 +89,15 @@ void Game::fight(Character& player, Character& enemy) {
             else
                 std::cout << "Not enough mana!";
         }
-        /*else if(select == 3) {
-
-        }*/
+        else if(select == 3) {
+            if(player.getMana() >= 30) {
+                enemy.setHealthPoints(enemy.getHealth() - (player.getAttack() * 3));
+                player.setManaPoints(player.getMana() - 30);
+                player.setHealthPoints(player.getHealth() - enemy.getAttack());
+            }
+            else
+                std::cout << "Not enough mana!";
+        }
         else {
             system("CLS");
             std::cout << "There is no choice like that.\n";
